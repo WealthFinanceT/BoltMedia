@@ -1,0 +1,102 @@
+/* General styling */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto;
+    color: #FFFFFF;
+}
+
+/* Animated background */
+.background-animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #1B40F0, #282828, #1B40F0, #282828);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    z-index: -1;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background-color: rgba(40, 40, 40, 0.9); /* Darker container to blend with gradient */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin: 50px auto;
+    max-width: 600px;
+    position: relative;
+}
+
+/* Profile picture styling */
+.profile-pic img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 3px solid #FFFFFF;
+    margin-bottom: 15px;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+/* Description styling */
+p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Button and link styling */
+.button, .link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Button colors */
+.button {
+    background-color: #e74c3c; /* Primary action button in red */
+}
+
+.link-button {
+    background-color: #1B40F0; /* Secondary action button in blue */
+}
+
+/* Button icons */
+.button i, .link-button i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Hover effect */
+.button:hover {
+    transform: scale(1.05);
+    background-color: #c0392b; /* Darken on hover */
+}
+
+.link-button:hover {
+    transform: scale(1.05);
+    background-color: #162a94; /* Darken blue on hover */
+}
